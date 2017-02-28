@@ -1,0 +1,58 @@
+# Execution begins at address 0
+	.pos 0
+	irmovq stack, %rsp
+	call main
+	halt
+
+# Array of 8 elements for sort
+	.align 8
+array:
+	.quad 0x6
+	.quad 0x15
+	.quad 0x22
+	.quad 0x10
+	.quad 0x9
+	.quad 0x8
+	.quad 0x12
+	.quad 0x2
+main:
+	irmovq array, %rdi
+	irmovq $8, %rsi
+	call bublle_sort
+	ret
+# void bubble(long *data, long count)
+# data in %rdi, count in %rsi
+bublle_sort:
+			addq	%rsi, %rsi	# 2*count
+			addq	%rsi, %rsi	# 4*count
+			addq	%rsi, %rsi	# 8*count
+			irmovq	$8, %r8		# Contant 8
+			subq	%r8, %rsi	# 8*count - 8
+			addq	%rdi, %rsi	# Address for data[count-1]
+			jmp		L2
+L4:		
+			mrmovq  (%rax), %rdx
+			mrmovq	8(%rax), %rcx
+			subq	%rcx, %rdx
+			jle		L3
+			mrmovq	(%rax), %rdx
+			rmmovq	%rcx, (%rax)
+			rmmovq	%rdx, 8(%rax)
+L3:
+			addq	%r8, %rax
+			jmp		L5
+L6:
+			rrmovq	%rdi, %rax
+L5:
+			rrmovq	%rax, %r10
+			subq	%rsi, %r10
+			jl		L4
+			subq	%r8, %rsi
+L2:
+			rrmovq  %rdi, %r9
+			subq	%rsi, %r9
+			jne		L6	
+			ret
+	
+	.pos 0x200
+stack:

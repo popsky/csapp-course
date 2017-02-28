@@ -1,0 +1,188 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+$0x0	code_s.c	/^  4009f7:	b8 00 00 00 00       	mov    $0x0,%eax$/;"	v
+$0x0	code_s.c	/^  400a34:	ba 00 00 00 00       	mov    $0x0,%edx$/;"	v
+$0x0	code_s.c	/^  400a50:	80 3d 51 16 20 00 00 	cmpb   $0x0,0x201651(%rip)        # 6020a8 <completed.6973>$/;"	v
+$0x0	code_s.c	/^  400a70:	48 83 3d 88 13 20 00 	cmpq   $0x0,0x201388(%rip)        # 601e00 <__JCR_END__>$/;"	v
+$0x0	code_s.c	/^  400a7a:	b8 00 00 00 00       	mov    $0x0,%eax$/;"	v
+$0x1	code_s.c	/^  400a63:	c6 05 3e 16 20 00 01 	movb   $0x1,0x20163e(%rip)        # 6020a8 <completed.6973>$/;"	v
+$0x3	code_s.c	/^  400a1c:	48 c1 f8 03          	sar    $0x3,%rax$/;"	v
+$0x3f	code_s.c	/^  400a26:	48 c1 ea 3f          	shr    $0x3f,%rdx$/;"	v
+$0x400a9d	code_s.c	/^  4009cd:	48 c7 c7 9d 0a 40 00 	mov    $0x400a9d,%rdi$/;"	v
+$0x401110	code_s.c	/^  4009c6:	48 c7 c1 10 11 40 00 	mov    $0x401110,%rcx$/;"	v
+$0x401180	code_s.c	/^  4009bf:	49 c7 c0 80 11 40 00 	mov    $0x401180,%r8$/;"	v
+$0x601e00	code_s.c	/^  400a85:	bf 00 1e 60 00       	mov    $0x601e00,%edi$/;"	v
+$0x6020a0	code_s.c	/^  4009e6:	48 2d a0 20 60 00    	sub    $0x6020a0,%rax$/;"	v
+$0x6020a0	code_s.c	/^  400a02:	bf a0 20 60 00       	mov    $0x6020a0,%edi$/;"	v
+$0x6020a0	code_s.c	/^  400a10:	b8 a0 20 60 00       	mov    $0x6020a0,%eax$/;"	v
+$0x6020a0	code_s.c	/^  400a16:	48 2d a0 20 60 00    	sub    $0x6020a0,%rax$/;"	v
+$0x6020a0	code_s.c	/^  400a42:	bf a0 20 60 00       	mov    $0x6020a0,%edi$/;"	v
+$0x6020a7	code_s.c	/^  4009e0:	b8 a7 20 60 00       	mov    $0x6020a7,%eax$/;"	v
+$0x8	code_s.c	/^  4008a5:	48 83 c4 08          	add    $0x8,%rsp$/;"	v
+$0xe	code_s.c	/^  4009ec:	48 83 f8 0e          	cmp    $0xe,%rax$/;"	v
+$0xfffffffffffffff0	code_s.c	/^  4009b9:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp$/;"	v
+BUFSIZE	prodconsn.c	9;"	d	file:
+CFLAGS	Makefile	/^CFLAGS = -Og -Wall -I $(CSAPP_INC) -I .$/;"	m
+COUNTERARGS	Makefile	/^COUNTERARGS = -O1 -Wall -I $(CSAPP_INC)$/;"	m
+CSAPP_INC	Makefile	/^CSAPP_INC = ..\/..\/include$/;"	m
+CSAPP_SRC	Makefile	/^CSAPP_SRC = ..\/..\/lib$/;"	m
+LDLIBS	Makefile	/^LDLIBS = -lpthread -lm$/;"	m
+MAXN	vsum.c	8;"	d	file:
+MAXSLEEP	prodconsn.c	10;"	d	file:
+MAXSTR	ctime_ts.c	5;"	d	file:
+MAXTHREADS	psum-array.c	6;"	d	file:
+MAXTHREADS	psum-local.c	7;"	d	file:
+MAXTHREADS	psum-mutex.c	7;"	d	file:
+MAXTHREADS	vsum.c	7;"	d	file:
+N	norace.c	6;"	d	file:
+N	race.c	7;"	d	file:
+N	rw3.c	11;"	d	file:
+N	sharing.c	3;"	d	file:
+NITEMS	prodconsn.c	8;"	d	file:
+NTHREADS	echoservert_pre.c	7;"	d	file:
+PROGS	Makefile	/^PROGS =	hello\\$/;"	m
+SBUFSIZE	echoservert_pre.c	8;"	d	file:
+__SBUF_H__	sbuf.h	2;"	d
+add_client	echoservers.c	/^void add_client(int connfd, pool *p)$/;"	f
+buf	sbuf.h	/^    int *buf;          \/* Buffer array *\/         $/;"	m	struct:__anon2
+byte_cnt	code_s.c	/^int byte_cnt = 0; \/* Counts total bytes received by server *\/$/;"	v
+byte_cnt	echo_cnt.c	/^static int byte_cnt;  \/* Byte counter *\/$/;"	v	file:
+byte_cnt	echoservers.c	/^int byte_cnt = 0; \/* Counts total bytes received by server *\/$/;"	v
+check_clients	echoservers.c	/^void check_clients(pool *p)$/;"	f
+clientfd	echoservers.c	/^    int clientfd[FD_SETSIZE];    \/* Set of active descriptors *\/$/;"	m	struct:__anon1	file:
+clientrio	echoservers.c	/^    rio_t clientrio[FD_SETSIZE]; \/* Set of active read buffers *\/$/;"	m	struct:__anon1	file:
+cnt	badcnt.c	/^volatile long cnt = 0; \/* Counter *\/$/;"	v
+cnt	badcnt.s	/^cnt:$/;"	l
+cnt	goodcnt.c	/^    volatile long cnt = 0; \/* Counter *\/$/;"	v
+cnt	goodcnt.s	/^cnt:$/;"	l
+command	select.c	/^void command(void) {$/;"	f
+consumer	prodconsn.c	/^void *consumer(void *arg)  \/* Consumer thread routine *\/$/;"	f
+ctime_ts	ctime_ts.c	/^char *ctime_ts(const time_t *timep, char *privatep)$/;"	f
+echo	echo.c	/^void echo(int connfd) $/;"	f
+echo_cnt	echo_cnt.c	/^void echo_cnt(int connfd) $/;"	f
+front	sbuf.h	/^    int front;         \/* buf[(front+1)%n] is first item *\/$/;"	m	struct:__anon2
+gsum	psum-mutex.c	/^long gsum = 0;           \/* Global sum *\/$/;"	v
+init_ctime_ts	ctime_ts.c	/^static void init_ctime_ts(void)$/;"	f	file:
+init_echo_cnt	echo_cnt.c	/^static void init_echo_cnt(void)$/;"	f	file:
+init_pool	code.c	/^void init_pool(int listenfd, pool *p)$/;"	f
+init_pool	code_s.c	/^void init_pool(int listenfd, pool *p)$/;"	f
+init_pool	echoservers.c	/^void init_pool(int listenfd, pool *p)$/;"	f
+items	sbuf.h	/^    sem_t items;       \/* Counts available items *\/$/;"	m	struct:__anon2
+main	badcnt.c	/^int main(int argc, char **argv) $/;"	f
+main	badcnt.s	/^main:$/;"	l
+main	code.c	/^int main(int argc, char **argv)$/;"	f
+main	code_s.c	/^int main(int argc, char **argv)$/;"	f
+main	ctime_ts.c	/^int main()$/;"	f
+main	echoclient.c	/^int main(int argc, char **argv) $/;"	f
+main	echoserverp.c	/^int main(int argc, char **argv) $/;"	f
+main	echoservers.c	/^int main(int argc, char **argv)$/;"	f
+main	echoservert.c	/^int main(int argc, char **argv) $/;"	f
+main	echoservert_cnt.c	/^int main(int argc, char **argv) $/;"	f
+main	echoservert_pre.c	/^int main(int argc, char **argv) $/;"	f
+main	goodcnt.c	/^int main(int argc, char **argv) $/;"	f
+main	goodcnt.s	/^main:$/;"	l
+main	hello.c	/^int main()                                    \/\/line:conc:hello:main$/;"	f
+main	hellobug.c	/^int main() $/;"	f
+main	norace.c	/^int main() $/;"	f
+main	pipe.c	/^int main(int argc, char **argv)$/;"	f
+main	prodconsn.c	/^int main() $/;"	f
+main	psum-array.c	/^int main(int argc, char **argv) $/;"	f
+main	psum-local.c	/^int main(int argc, char **argv) $/;"	f
+main	psum-mutex.c	/^int main(int argc, char **argv) $/;"	f
+main	race.c	/^int main() $/;"	f
+main	rand.c	/^int main()$/;"	f
+main	rand_r.c	/^int main()$/;"	f
+main	select.c	/^int main(int argc, char **argv) $/;"	f
+main	sharing.c	/^int main() $/;"	f
+main	test.c	/^int main() $/;"	f
+main	tfgets-main.c	/^int main() $/;"	f
+main	threadunsafe.c	/^int main() {$/;"	f
+main	vsum.c	/^int main(int argc, char **argv) $/;"	f
+maxfd	echoservers.c	/^    int maxfd;        \/* Largest descriptor in read_set *\/$/;"	m	struct:__anon1	file:
+maxi	echoservers.c	/^    int maxi;         \/* Highwater index into client array *\/$/;"	m	struct:__anon1	file:
+mutex	ctime_ts.c	/^static sem_t mutex; \/* protects calls to ctime *\/$/;"	v	file:
+mutex	echo_cnt.c	/^static sem_t mutex;   \/* and the mutex that protects it *\/$/;"	v	file:
+mutex	goodcnt.c	/^    sem_t mutex;           \/* Semaphore that protects counter *\/$/;"	v
+mutex	psum-mutex.c	/^sem_t mutex;             \/* Mutex to protect global sum *\/$/;"	v
+mutex	rw1.c	/^sem_t mutex, w; \/* Both initially = 1 *\/$/;"	v
+mutex	rw2.c	/^sem_t mutex, w, wg; \/* All initially = 1 *\/$/;"	v
+mutex	sbuf.h	/^    sem_t mutex;       \/* Protects accesses to buf *\/$/;"	m	struct:__anon2
+n	sbuf.h	/^    int n;             \/* Maximum number of slots *\/$/;"	m	struct:__anon2
+nelems_per_thread	psum-array.c	/^long nelems_per_thread; \/* Number of elements summed by each thread *\/$/;"	v
+nelems_per_thread	psum-local.c	/^long nelems_per_thread; \/* Number of elements summed by each thread *\/$/;"	v
+nelems_per_thread	psum-mutex.c	/^long nelems_per_thread;  \/* Number of elements to sum *\/$/;"	v
+nelems_per_thread	vsum.c	/^long nelems_per_thread;  \/* Region size for each thread *\/$/;"	v
+next_seed	rand.c	/^unsigned next_seed = 1;$/;"	v
+nready	echoservers.c	/^    int nready;       \/* Number of ready descriptors from select *\/$/;"	m	struct:__anon1	file:
+pool	echoservers.c	/^} pool; \/\/line:conc:echoservers:endpool$/;"	t	typeref:struct:__anon1	file:
+producer	prodconsn.c	/^void *producer(void *arg)  \/* Producer thread routine *\/$/;"	f
+psuCC	Makefile	/^psuCC = gcc$/;"	m
+psum	psum-array.c	/^long psum[MAXTHREADS];  \/* Partial sum computed by each thread *\/$/;"	v
+psum	psum-local.c	/^long psum[MAXTHREADS];  \/* Partial sum computed by each thread *\/$/;"	v
+psum	vsum.c	/^double psum[MAXTHREADS]; \/* Partial sum computed by each thread *\/$/;"	v
+ptr	sharing.c	/^char **ptr;  \/* Global variable *\/ \/\/line:conc:sharing:ptrdec$/;"	v
+rand	rand.c	/^unsigned rand(void)$/;"	f
+rand_r	rand_r.c	/^int rand_r(unsigned int *nextp)$/;"	f
+rax	code_s.c	/^  40089b:	48 85 c0             	test   %rax,%rax$/;"	v
+rax	code_s.c	/^  4009fc:	48 85 c0             	test   %rax,%rax$/;"	v
+rax	code_s.c	/^  400a23:	48 89 c2             	mov    %rax,%rdx$/;"	v
+rax	code_s.c	/^  400a3f:	48 89 c6             	mov    %rax,%rsi$/;"	v
+rax	code_s.c	/^  400a7f:	48 85 c0             	test   %rax,%rax$/;"	v
+rdx	code_s.c	/^  4009b2:	49 89 d1             	mov    %rdx,%r9$/;"	v
+rdx	code_s.c	/^  400a2a:	48 01 d0             	add    %rdx,%rax$/;"	v
+rdx	code_s.c	/^  400a39:	48 85 d2             	test   %rdx,%rdx$/;"	v
+read_set	echoservers.c	/^    fd_set read_set;  \/* Set of all active descriptors *\/$/;"	m	struct:__anon1	file:
+readcnt	rw1.c	/^int readcnt;    \/* Initially = 0 *\/$/;"	v
+readcount	rw2.c	/^int readcount;      \/* Initially = 0 *\/$/;"	v
+reader	rw0.c	/^void reader(void) $/;"	f
+reader	rw1.c	/^void reader(void) $/;"	f
+reader	rw2.c	/^void reader(void) $/;"	f
+reader	rw3.c	/^void reader(void) $/;"	f
+ready_set	echoservers.c	/^    fd_set ready_set; \/* Subset of descriptors ready for reading  *\/$/;"	m	struct:__anon1	file:
+rear	sbuf.h	/^    int rear;          \/* buf[rear%n] is last item *\/$/;"	m	struct:__anon2
+rsp	code_s.c	/^  4009b6:	48 89 e2             	mov    %rsp,%rdx$/;"	v
+rsp	code_s.c	/^  4009f0:	48 89 e5             	mov    %rsp,%rbp$/;"	v
+rsp	code_s.c	/^  400a20:	48 89 e5             	mov    %rsp,%rbp$/;"	v
+rsp	code_s.c	/^  400a8a:	48 89 e5             	mov    %rsp,%rbp$/;"	v
+sbuf	echoservert_pre.c	/^sbuf_t sbuf; \/* Shared buffer of connected descriptors *\/$/;"	v
+sbuf	prodconsn.c	/^sbuf_t sbuf; \/* Shared buffer *\/$/;"	v
+sbuf_deinit	sbuf.c	/^void sbuf_deinit(sbuf_t *sp)$/;"	f
+sbuf_init	sbuf.c	/^void sbuf_init(sbuf_t *sp, int n)$/;"	f
+sbuf_insert	sbuf.c	/^void sbuf_insert(sbuf_t *sp, int item)$/;"	f
+sbuf_remove	sbuf.c	/^int sbuf_remove(sbuf_t *sp)$/;"	f
+sbuf_t	sbuf.h	/^} sbuf_t;$/;"	t	typeref:struct:__anon2
+sem	rw3.c	/^sem_t sem;    \/* Initially = N *\/$/;"	v
+sigchld_handler	echoserverp.c	/^void sigchld_handler(int sig) \/\/line:conc:echoserverp:handlerstart$/;"	f
+slots	sbuf.h	/^    sem_t slots;       \/* Counts available slots *\/$/;"	m	struct:__anon2
+srand	rand.c	/^void srand(unsigned new_seed)$/;"	f
+sum	vsum.c	/^void *sum(void *vargp) $/;"	f
+sum_array	psum-array.c	/^void *sum_array(void *vargp) $/;"	f
+sum_local	psum-local.c	/^void *sum_local(void *vargp) $/;"	f
+sum_mutex	psum-mutex.c	/^void *sum_mutex(void *vargp) $/;"	f
+thread	badcnt.c	/^void *thread(void *vargp) $/;"	f
+thread	badcnt.s	/^thread:$/;"	l
+thread	echoservert.c	/^void *thread(void *vargp) $/;"	f
+thread	echoservert_cnt.c	/^void *thread(void *vargp) $/;"	f
+thread	echoservert_pre.c	/^void *thread(void *vargp) $/;"	f
+thread	goodcnt.c	/^void *thread(void *vargp) $/;"	f
+thread	goodcnt.s	/^thread:$/;"	l
+thread	hello.c	/^void *thread(void *vargp) \/* thread routine *\/  \/\/line:conc:hello:beginthread$/;"	f
+thread	hellobug.c	/^void *thread(void *vargp) $/;"	f
+thread	norace.c	/^void *thread(void *vargp) $/;"	f
+thread	race.c	/^void *thread(void *vargp) $/;"	f
+thread	sharing.c	/^void *thread(void *vargp) $/;"	f
+thread	test.c	/^void *thread(void *vargp) \/* thread routine *\/$/;"	f
+vector	vsum.c	/^double vector[MAXN];          \/* Vector *\/$/;"	v
+w	rw0.c	/^sem_t w; \/* Initially = 1 *\/$/;"	v
+w	rw1.c	/^sem_t mutex, w; \/* Both initially = 1 *\/$/;"	v
+w	rw2.c	/^sem_t mutex, w, wg; \/* All initially = 1 *\/$/;"	v
+wg	rw2.c	/^sem_t mutex, w, wg; \/* All initially = 1 *\/$/;"	v
+wmutex	rw3.c	/^sem_t wmutex; \/* Initially = 1 *\/$/;"	v
+writer	rw0.c	/^void writer(void) $/;"	f
+writer	rw1.c	/^void writer(void) $/;"	f
+writer	rw2.c	/^void writer(void) $/;"	f
+writer	rw3.c	/^void writer(void) $/;"	f

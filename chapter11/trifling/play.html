@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<video id="video" width="400" heigth="350" controls>
+</video><br>
+
+
+电影名：<br>
+<input type="text" id="mname">
+<button onclick="play()">播放</button>
+
+
+<script>
+var video = document.getElementById('video');
+var source = document.createElement('source');
+video.appendChild(source);
+
+function play() {  
+    var name = document.getElementById('mname').value;
+    source.setAttribute('src', name); 
+    video.load();
+    video.play();
+}
+</script>
+</body>
+</html>

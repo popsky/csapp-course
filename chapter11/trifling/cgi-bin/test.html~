@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<video src="./Body_on_me.mpg"  width="320" height="240" controls="controls">
+</video>
+
+</body>
+</html>
+
+<video width="320" height="240" controls="controls">
+  <source src="./Body_on_me.mpg" type="video/mpg" />
+  <object data="./Body_on_me.mpg" width="320" height="240">
+    <embed src="./Body_on_me.swf" width="320" height="240" />
+  </object>
+</video>

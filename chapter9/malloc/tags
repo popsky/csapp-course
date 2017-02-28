@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CHUNKSIZE	mm.c	23;"	d	file:
+DSIZE	mm.c	22;"	d	file:
+FTRP	mm.c	41;"	d	file:
+GET	mm.c	31;"	d	file:
+GET_ALLOC	mm.c	36;"	d	file:
+GET_PREALLOC	mm.c	37;"	d	file:
+GET_SIZE	mm.c	35;"	d	file:
+HDRP	mm.c	40;"	d	file:
+MAX	mm.c	25;"	d	file:
+MAX_HEAP	memlib.c	18;"	d	file:
+NEXT_BLKP	mm.c	44;"	d	file:
+NEXT_FIT	mm.c	17;"	d	file:
+PACK	mm.c	28;"	d	file:
+PREV_BLKP	mm.c	45;"	d	file:
+PUT	mm.c	32;"	d	file:
+WSIZE	mm.c	21;"	d	file:
+checkblock	mm.c	/^static void checkblock(void *bp)$/;"	f	file:
+checkheap	mm.c	/^void checkheap(int verbose)$/;"	f
+coalesce	mm.c	/^static void *coalesce(void *bp)$/;"	f	file:
+extend_heap	mm.c	/^static void *extend_heap(size_t words)$/;"	f	file:
+f	t.c	/^void f(){$/;"	f
+find_fit	mm.c	/^static void *find_fit(size_t asize)$/;"	f	file:
+heap_listp	mm.c	/^static char *heap_listp = 0;  \/* Pointer to first block *\/$/;"	v	file:
+i	t.c	/^int i;$/;"	v
+main	t.c	/^int main(void)$/;"	f
+main	test.c	/^int main(void)$/;"	f
+mem_brk	memlib.c	/^static char *mem_brk;      \/* Points to last byte of heap plus 1 *\/$/;"	v	file:
+mem_deinit	memlib.c	/^void mem_deinit(void)$/;"	f
+mem_heap	memlib.c	/^static char *mem_heap;     \/* Points to first byte of heap *\/ $/;"	v	file:
+mem_heap_hi	memlib.c	/^void *mem_heap_hi()$/;"	f
+mem_heap_lo	memlib.c	/^void *mem_heap_lo()$/;"	f
+mem_heapsize	memlib.c	/^size_t mem_heapsize() $/;"	f
+mem_init	memlib.c	/^void mem_init(void)$/;"	f
+mem_max_addr	memlib.c	/^static char *mem_max_addr; \/* Max legal heap addr plus 1*\/ $/;"	v	file:
+mem_pagesize	memlib.c	/^size_t mem_pagesize()$/;"	f
+mem_reset_brk	memlib.c	/^void mem_reset_brk()$/;"	f
+mem_sbrk	memlib.c	/^void *mem_sbrk(int incr) $/;"	f
+mm_checkheap	mm.c	/^void mm_checkheap(int verbose)$/;"	f
+mm_free	mm.c	/^void mm_free(void *bp)$/;"	f
+mm_init	mm.c	/^int mm_init(void)$/;"	f
+mm_malloc	mm.c	/^void *mm_malloc(size_t size)$/;"	f
+mm_realloc	mm.c	/^void *mm_realloc(void *ptr, size_t size)$/;"	f
+place	mm.c	/^static void place(void *bp, size_t asize)$/;"	f	file:
+printblock	mm.c	/^static void printblock(void *bp)$/;"	f	file:
+rover	mm.c	/^static char *rover;           \/* Next fit rover *\/$/;"	v	file:

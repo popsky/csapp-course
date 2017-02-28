@@ -1,0 +1,61 @@
+                            | # Execution begins at address 0
+0x000:                      | 	.pos 0
+0x000: 30f40002000000000000 | 	irmovq stack, %rsp
+0x00a: 805800000000000000   | 	call main
+0x013: 00                   | 	halt
+                            | 
+                            | # Array of 8 elements for sort
+0x018:                      | 	.align 8
+0x018:                      | array:
+0x018: 0600000000000000     | 	.quad 0x6
+0x020: 1500000000000000     | 	.quad 0x15
+0x028: 2200000000000000     | 	.quad 0x22
+0x030: 1000000000000000     | 	.quad 0x10
+0x038: 0900000000000000     | 	.quad 0x9
+0x040: 0800000000000000     | 	.quad 0x8
+0x048: 1200000000000000     | 	.quad 0x12
+0x050: 0200000000000000     | 	.quad 0x2
+0x058:                      | main:
+0x058: 30f71800000000000000 | 	irmovq array, %rdi
+0x062: 30f60800000000000000 | 	irmovq $8, %rsi
+0x06c: 807600000000000000   | 	call bublle_sort
+0x075: 90                   | 	ret
+                            | # void bubble(long *data, long count)
+                            | # data in %rdi, count in %rsi
+0x076:                      | bublle_sort:
+0x076: 6066                 | 			addq	%rsi, %rsi	# 2*count
+0x078: 6066                 | 			addq	%rsi, %rsi	# 4*count
+0x07a: 6066                 | 			addq	%rsi, %rsi	# 8*count
+0x07c: 30f80800000000000000 | 			irmovq	$8, %r8		# Contant 8
+0x086: 6186                 | 			subq	%r8, %rsi	# 8*count - 8
+0x088: 6076                 | 			addq	%rdi, %rsi	# Address for data[count-1]
+0x08a: 70eb00000000000000   | 			jmp		L2
+0x093:                      | L4:		
+0x093: 50200000000000000000 | 			mrmovq  (%rax), %rdx
+0x09d: 50100800000000000000 | 			mrmovq	8(%rax), %rcx
+0x0a7: 2029                 | 			rrmovq  %rdx, %r9
+0x0a9: 6019                 | 			addq	%rcx, %r9
+0x0ab: 6112                 | 			subq	%rcx, %rdx
+0x0ad: 50200000000000000000 | 			mrmovq	(%rax), %rdx
+0x0b7: 2621                 | 			cmovg	%rdx, %rcx
+0x0b9: 6119                 | 			subq	%rcx, %r9
+0x0bb: 40900000000000000000 | 			rmmovq	%r9, (%rax)
+0x0c5: 40100800000000000000 | 			rmmovq	%rcx, 8(%rax)
+0x0cf:                      | L3:
+0x0cf: 6080                 | 			addq	%r8, %rax
+0x0d1: 70dc00000000000000   | 			jmp		L5
+0x0da:                      | L6:
+0x0da: 2070                 | 			rrmovq	%rdi, %rax
+0x0dc:                      | L5:
+0x0dc: 200a                 | 			rrmovq	%rax, %r10
+0x0de: 616a                 | 			subq	%rsi, %r10
+0x0e0: 729300000000000000   | 			jl		L4
+0x0e9: 6186                 | 			subq	%r8, %rsi
+0x0eb:                      | L2:
+0x0eb: 2079                 | 			rrmovq  %rdi, %r9
+0x0ed: 6169                 | 			subq	%rsi, %r9
+0x0ef: 74da00000000000000   | 			jne		L6	
+0x0f8: 90                   | 			ret
+                            | 	
+0x200:                      | 	.pos 0x200
+0x200:                      | stack:

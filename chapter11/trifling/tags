@@ -1,0 +1,14 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+clienterror	trifling.c	/^void clienterror(int fd, char *cause, char *errnum,char *shortmsg, char *longmsg)$/;"	f
+doit	trifling.c	/^void doit(int fd){$/;"	f
+get_filetype	trifling.c	/^void get_filetype(char *filename,char *filetype) {$/;"	f
+main	trifling.c	/^int main(int argc, char const* argv[])$/;"	f
+parse_uri	trifling.c	/^int parse_uri(char *uri,char *filename,char *cgiarg){$/;"	f
+read_requesthdrs	trifling.c	/^void read_requesthdrs(rio_t *rp) {$/;"	f
+serve_dynamic	trifling.c	/^void serve_dynamic(int fd,char *filename,char *cgiarg){$/;"	f
+serve_static	trifling.c	/^void serve_static(int fd,char *filename, int filesize) {$/;"	f

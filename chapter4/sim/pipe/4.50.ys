@@ -1,0 +1,76 @@
+# Execution begins at address 0
+	.pos 0
+	irmovq stack, %rsp
+	call main
+	halt
+
+main:
+	pushq	%rbx
+	pushq	%rbp
+	pushq	%r12
+	irmovq	$-1,%rbx
+	irmovq	$1,%r12
+loop:
+	irmovq	$7,%rbp
+	rrmovq	%rbx,%rdi
+	call	switchv
+	addq	%r12,%rbx
+	subq	%rbx,%rbp
+	jne		loop
+done:
+	popq	%r12
+	popq	%rbp
+	popq	%rbx
+	ret
+# idx in %rdi
+switchv:
+	irmovq	$0, %r9
+	irmovq	$0x5,%r8
+	subq	%rdi,%r8
+	jl		default
+	subq	%rdi,%r9
+	jg		default
+	irmovq	$0x100,%rcx
+	irmovq	$0xb,%rsi	# Code block length
+	irmovq	$1, %rdx
+	andq	%rdi,%rdi
+	jmp		test
+loop1:
+	addq	%rsi,%rcx
+	subq	%rdx,%rdi
+test:
+	jne	loop1
+	pushq	%rcx
+	ret
+	
+default:
+	irmovq	def, %rax
+	pushq	%rax
+	ret
+
+# start address of jump table
+	.pos 0x100
+case0:
+	irmovq	$0xaaa, %rax
+	ret
+case1:
+	irmovq	$0xddd, %rax
+	ret
+case2:
+	irmovq	$0xbbb, %rax
+	ret
+case3:
+	irmovq	$0xccc, %rax
+	ret
+case4:
+	irmovq	$0xddd, %rax
+	ret
+case5:
+	irmovq	$0xbbb, %rax
+	ret
+def:
+	irmovq	$0xddd, %rax
+	ret
+
+	.pos 0x200
+stack:

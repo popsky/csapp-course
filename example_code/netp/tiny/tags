@@ -1,0 +1,127 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Accept	csapp.c	/^int Accept(int s, struct sockaddr *addr, socklen_t *addrlen) $/;"	f
+Alarm	csapp.c	/^unsigned int Alarm(unsigned int seconds) {$/;"	f
+Bind	csapp.c	/^void Bind(int sockfd, struct sockaddr *my_addr, int addrlen) $/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O2 -Wall -I .$/;"	m
+Calloc	csapp.c	/^void *Calloc(size_t nmemb, size_t size) $/;"	f
+Close	csapp.c	/^void Close(int fd) $/;"	f
+Closedir	csapp.c	/^int Closedir(DIR *dirp) $/;"	f
+Connect	csapp.c	/^void Connect(int sockfd, struct sockaddr *serv_addr, int addrlen) $/;"	f
+DEF_MODE	csapp.h	30;"	d
+DEF_UMASK	csapp.h	31;"	d
+Dup2	csapp.c	/^int Dup2(int fd1, int fd2) $/;"	f
+Execve	csapp.c	/^void Execve(const char *filename, char *const argv[], char *const envp[]) $/;"	f
+Fclose	csapp.c	/^void Fclose(FILE *fp) $/;"	f
+Fdopen	csapp.c	/^FILE *Fdopen(int fd, const char *type) $/;"	f
+Fgets	csapp.c	/^char *Fgets(char *ptr, int n, FILE *stream) $/;"	f
+Fopen	csapp.c	/^FILE *Fopen(const char *filename, const char *mode) $/;"	f
+Fork	csapp.c	/^pid_t Fork(void) $/;"	f
+Fputs	csapp.c	/^void Fputs(const char *ptr, FILE *stream) $/;"	f
+Fread	csapp.c	/^size_t Fread(void *ptr, size_t size, size_t nmemb, FILE *stream) $/;"	f
+Free	csapp.c	/^void Free(void *ptr) $/;"	f
+Freeaddrinfo	csapp.c	/^void Freeaddrinfo(struct addrinfo *res)$/;"	f
+Fstat	csapp.c	/^void Fstat(int fd, struct stat *buf) $/;"	f
+Fwrite	csapp.c	/^void Fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream) $/;"	f
+Getaddrinfo	csapp.c	/^void Getaddrinfo(const char *node, const char *service, $/;"	f
+Gethostbyaddr	csapp.c	/^struct hostent *Gethostbyaddr(const char *addr, int len, int type) $/;"	f
+Gethostbyname	csapp.c	/^struct hostent *Gethostbyname(const char *name) $/;"	f
+Getnameinfo	csapp.c	/^void Getnameinfo(const struct sockaddr *sa, socklen_t salen, char *host, $/;"	f
+Getpgrp	csapp.c	/^pid_t Getpgrp(void) {$/;"	f
+Inet_ntop	csapp.c	/^void Inet_ntop(int af, const void *src, char *dst, socklen_t size)$/;"	f
+Inet_pton	csapp.c	/^void Inet_pton(int af, const char *src, void *dst) $/;"	f
+Kill	csapp.c	/^void Kill(pid_t pid, int signum) $/;"	f
+LIB	Makefile	/^LIB = -lpthread$/;"	m
+LISTENQ	csapp.h	57;"	d
+Listen	csapp.c	/^void Listen(int s, int backlog) $/;"	f
+Lseek	csapp.c	/^off_t Lseek(int fildes, off_t offset, int whence) $/;"	f
+MAXBUF	csapp.h	56;"	d
+MAXLINE	csapp.h	55;"	d
+Malloc	csapp.c	/^void *Malloc(size_t size) $/;"	f
+Mmap	csapp.c	/^void *Mmap(void *addr, size_t len, int prot, int flags, int fd, off_t offset) $/;"	f
+Munmap	csapp.c	/^void Munmap(void *start, size_t length) $/;"	f
+Open	csapp.c	/^int Open(const char *pathname, int flags, mode_t mode) $/;"	f
+Open_clientfd	csapp.c	/^int Open_clientfd(char *hostname, char *port) $/;"	f
+Open_listenfd	csapp.c	/^int Open_listenfd(char *port) $/;"	f
+Opendir	csapp.c	/^DIR *Opendir(const char *name) $/;"	f
+P	csapp.c	/^void P(sem_t *sem) $/;"	f
+Pause	csapp.c	/^void Pause() $/;"	f
+Pthread_cancel	csapp.c	/^void Pthread_cancel(pthread_t tid) {$/;"	f
+Pthread_create	csapp.c	/^void Pthread_create(pthread_t *tidp, pthread_attr_t *attrp, $/;"	f
+Pthread_detach	csapp.c	/^void Pthread_detach(pthread_t tid) {$/;"	f
+Pthread_exit	csapp.c	/^void Pthread_exit(void *retval) {$/;"	f
+Pthread_join	csapp.c	/^void Pthread_join(pthread_t tid, void **thread_return) {$/;"	f
+Pthread_once	csapp.c	/^void Pthread_once(pthread_once_t *once_control, void (*init_function)()) {$/;"	f
+Pthread_self	csapp.c	/^pthread_t Pthread_self(void) {$/;"	f
+RIO_BUFSIZE	csapp.h	41;"	d
+Read	csapp.c	/^ssize_t Read(int fd, void *buf, size_t count) $/;"	f
+Readdir	csapp.c	/^struct dirent *Readdir(DIR *dirp)$/;"	f
+Realloc	csapp.c	/^void *Realloc(void *ptr, size_t size) $/;"	f
+Rio_readinitb	csapp.c	/^void Rio_readinitb(rio_t *rp, int fd)$/;"	f
+Rio_readlineb	csapp.c	/^ssize_t Rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen) $/;"	f
+Rio_readn	csapp.c	/^ssize_t Rio_readn(int fd, void *ptr, size_t nbytes) $/;"	f
+Rio_readnb	csapp.c	/^ssize_t Rio_readnb(rio_t *rp, void *usrbuf, size_t n) $/;"	f
+Rio_writen	csapp.c	/^void Rio_writen(int fd, void *usrbuf, size_t n) $/;"	f
+SA	csapp.h	/^typedef struct sockaddr SA;$/;"	t	typeref:struct:sockaddr
+Select	csapp.c	/^int Select(int  n, fd_set *readfds, fd_set *writefds,$/;"	f
+Sem_init	csapp.c	/^void Sem_init(sem_t *sem, int pshared, unsigned int value) $/;"	f
+Setpgid	csapp.c	/^void Setpgid(pid_t pid, pid_t pgid) {$/;"	f
+Setsockopt	csapp.c	/^void Setsockopt(int s, int level, int optname, const void *optval, int optlen) $/;"	f
+Sigaddset	csapp.c	/^void Sigaddset(sigset_t *set, int signum)$/;"	f
+Sigdelset	csapp.c	/^void Sigdelset(sigset_t *set, int signum)$/;"	f
+Sigemptyset	csapp.c	/^void Sigemptyset(sigset_t *set)$/;"	f
+Sigfillset	csapp.c	/^void Sigfillset(sigset_t *set)$/;"	f
+Sigismember	csapp.c	/^int Sigismember(const sigset_t *set, int signum)$/;"	f
+Signal	csapp.c	/^handler_t *Signal(int signum, handler_t *handler) $/;"	f
+Sigprocmask	csapp.c	/^void Sigprocmask(int how, const sigset_t *set, sigset_t *oldset)$/;"	f
+Sigsuspend	csapp.c	/^int Sigsuspend(const sigset_t *set)$/;"	f
+Sio_error	csapp.c	/^void Sio_error(char s[])$/;"	f
+Sio_putl	csapp.c	/^ssize_t Sio_putl(long v)$/;"	f
+Sio_puts	csapp.c	/^ssize_t Sio_puts(char s[])$/;"	f
+Sleep	csapp.c	/^unsigned int Sleep(unsigned int secs) $/;"	f
+Socket	csapp.c	/^int Socket(int domain, int type, int protocol) $/;"	f
+Stat	csapp.c	/^void Stat(const char *filename, struct stat *buf) $/;"	f
+V	csapp.c	/^void V(sem_t *sem) $/;"	f
+Wait	csapp.c	/^pid_t Wait(int *status) $/;"	f
+Waitpid	csapp.c	/^pid_t Waitpid(pid_t pid, int *iptr, int options) $/;"	f
+Write	csapp.c	/^ssize_t Write(int fd, const void *buf, size_t count) $/;"	f
+__CSAPP_H__	csapp.h	3;"	d
+app_error	csapp.c	/^void app_error(char *msg) \/* Application error *\/$/;"	f
+clienterror	tiny.c	/^void clienterror(int fd, char *cause, char *errnum,$/;"	f
+dns_error	csapp.c	/^void dns_error(char *msg)$/;"	f
+doit	tiny.c	/^void doit(int fd)$/;"	f
+gai_error	csapp.c	/^void gai_error(int code, char *msg) \/* Getaddrinfo-style error *\/$/;"	f
+get_filetype	tiny.c	/^void get_filetype(char *filename, char *filetype)$/;"	f
+handler_t	csapp.h	/^typedef void handler_t(int);$/;"	t
+main	test.c	/^int main(void)$/;"	f
+main	tiny.c	/^int main(int argc, char **argv)$/;"	f
+open_clientfd	csapp.c	/^int open_clientfd(char *hostname, char *port) {$/;"	f
+open_listenfd	csapp.c	/^int open_listenfd(char *port) $/;"	f
+parse_uri	tiny.c	/^int parse_uri(char *uri, char *filename, char *cgiargs)$/;"	f
+posix_error	csapp.c	/^void posix_error(int code, char *msg) \/* Posix-style error *\/$/;"	f
+read_requesthdrs	tiny.c	/^void read_requesthdrs(rio_t *rp)$/;"	f
+rio_buf	csapp.h	/^    char rio_buf[RIO_BUFSIZE]; \/* Internal buffer *\/$/;"	m	struct:__anon1
+rio_bufptr	csapp.h	/^    char *rio_bufptr;          \/* Next unread byte in internal buf *\/$/;"	m	struct:__anon1
+rio_cnt	csapp.h	/^    int rio_cnt;               \/* Unread bytes in internal buf *\/$/;"	m	struct:__anon1
+rio_fd	csapp.h	/^    int rio_fd;                \/* Descriptor for this internal buf *\/$/;"	m	struct:__anon1
+rio_read	csapp.c	/^static ssize_t rio_read(rio_t *rp, char *usrbuf, size_t n)$/;"	f	file:
+rio_readinitb	csapp.c	/^void rio_readinitb(rio_t *rp, int fd) $/;"	f
+rio_readlineb	csapp.c	/^ssize_t rio_readlineb(rio_t *rp, void *usrbuf, size_t maxlen) $/;"	f
+rio_readn	csapp.c	/^ssize_t rio_readn(int fd, void *usrbuf, size_t n) $/;"	f
+rio_readnb	csapp.c	/^ssize_t rio_readnb(rio_t *rp, void *usrbuf, size_t n) $/;"	f
+rio_t	csapp.h	/^} rio_t;$/;"	t	typeref:struct:__anon1
+rio_writen	csapp.c	/^ssize_t rio_writen(int fd, void *usrbuf, size_t n) $/;"	f
+serve_dynamic	tiny.c	/^void serve_dynamic(int fd, char *filename, char *cgiargs)$/;"	f
+serve_static	tiny.c	/^void serve_static(int fd, char *filename, int filesize)$/;"	f
+sio_error	csapp.c	/^void sio_error(char s[]) \/* Put error message and exit *\/$/;"	f
+sio_ltoa	csapp.c	/^static void sio_ltoa(long v, char s[], int b) $/;"	f	file:
+sio_putl	csapp.c	/^ssize_t sio_putl(long v) \/* Put long *\/$/;"	f
+sio_puts	csapp.c	/^ssize_t sio_puts(char s[]) \/* Put string *\/$/;"	f
+sio_reverse	csapp.c	/^static void sio_reverse(char s[])$/;"	f	file:
+sio_strlen	csapp.c	/^static size_t sio_strlen(char s[])$/;"	f	file:
+unix_error	csapp.c	/^void unix_error(char *msg) \/* Unix-style error *\/$/;"	f

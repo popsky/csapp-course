@@ -1,0 +1,76 @@
+                            | # Execution begins at address 0
+0x000:                      | 	.pos 0
+0x000: 30f40002000000000000 | 	irmovq stack, %rsp
+0x00a: 801400000000000000   | 	call main
+0x013: 00                   | 	halt
+                            | 
+0x014:                      | main:
+0x014: a03f                 | 	pushq	%rbx
+0x016: a05f                 | 	pushq	%rbp
+0x018: a0cf                 | 	pushq	%r12
+0x01a: 30f3ffffffffffffffff | 	irmovq	$-1,%rbx
+0x024: 30fc0100000000000000 | 	irmovq	$1,%r12
+0x02e:                      | loop:
+0x02e: 30f50700000000000000 | 	irmovq	$7,%rbp
+0x038: 2037                 | 	rrmovq	%rbx,%rdi
+0x03a: 805700000000000000   | 	call	switchv
+0x043: 60c3                 | 	addq	%r12,%rbx
+0x045: 6135                 | 	subq	%rbx,%rbp
+0x047: 742e00000000000000   | 	jne		loop
+0x050:                      | done:
+0x050: b0cf                 | 	popq	%r12
+0x052: b05f                 | 	popq	%rbp
+0x054: b03f                 | 	popq	%rbx
+0x056: 90                   | 	ret
+                            | # idx in %rdi
+0x057:                      | switchv:
+0x057: 30f90000000000000000 | 	irmovq	$0, %r9
+0x061: 30f80500000000000000 | 	irmovq	$0x5,%r8
+0x06b: 6178                 | 	subq	%rdi,%r8
+0x06d: 72ba00000000000000   | 	jl		default
+0x076: 6179                 | 	subq	%rdi,%r9
+0x078: 76ba00000000000000   | 	jg		default
+0x081: 30f10001000000000000 | 	irmovq	$0x100,%rcx
+0x08b: 30f60b00000000000000 | 	irmovq	$0xb,%rsi	# Code block length
+0x095: 30f20100000000000000 | 	irmovq	$1, %rdx
+0x09f: 6277                 | 	andq	%rdi,%rdi
+0x0a1: 70ae00000000000000   | 	jmp		test
+0x0aa:                      | loop1:
+0x0aa: 6061                 | 	addq	%rsi,%rcx
+0x0ac: 6127                 | 	subq	%rdx,%rdi
+0x0ae:                      | test:
+0x0ae: 74aa00000000000000   | 	jne	loop1
+0x0b7: a01f                 | 	pushq	%rcx
+0x0b9: 90                   | 	ret
+                            | 	
+0x0ba:                      | default:
+0x0ba: 30f04201000000000000 | 	irmovq	def, %rax
+0x0c4: a00f                 | 	pushq	%rax
+0x0c6: 90                   | 	ret
+                            | 
+                            | # start address of jump table
+0x100:                      | 	.pos 0x100
+0x100:                      | case0:
+0x100: 30f0aa0a000000000000 | 	irmovq	$0xaaa, %rax
+0x10a: 90                   | 	ret
+0x10b:                      | case1:
+0x10b: 30f0dd0d000000000000 | 	irmovq	$0xddd, %rax
+0x115: 90                   | 	ret
+0x116:                      | case2:
+0x116: 30f0bb0b000000000000 | 	irmovq	$0xbbb, %rax
+0x120: 90                   | 	ret
+0x121:                      | case3:
+0x121: 30f0cc0c000000000000 | 	irmovq	$0xccc, %rax
+0x12b: 90                   | 	ret
+0x12c:                      | case4:
+0x12c: 30f0dd0d000000000000 | 	irmovq	$0xddd, %rax
+0x136: 90                   | 	ret
+0x137:                      | case5:
+0x137: 30f0bb0b000000000000 | 	irmovq	$0xbbb, %rax
+0x141: 90                   | 	ret
+0x142:                      | def:
+0x142: 30f0dd0d000000000000 | 	irmovq	$0xddd, %rax
+0x14c: 90                   | 	ret
+                            | 
+0x200:                      | 	.pos 0x200
+0x200:                      | stack:

@@ -1,0 +1,25 @@
+# Execution begins at address 0 
+	.pos 0 
+	irmovq stack, %rsp  	# Set up stack pointer  
+	call main		# Execute main program
+	halt			# Terminate program 
+
+main:
+	irmovq $4,%rsi
+	call sum		# sum(array, 4)
+	ret 
+
+/* $begin sumi-ys */
+# long sum(long *start, long count)
+# start in %rdi, count in %rsi
+sum:
+	irmovq prog,%rax
+	pushq    %rax
+	ret
+/* $end sumi-ys */
+
+prog:
+      irmovq  $100,%r9
+# The stack starts here and grows to lower addresses
+	.pos 0x100		
+stack:	 

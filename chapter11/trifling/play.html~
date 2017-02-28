@@ -1,0 +1,10 @@
+<head>
+    <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/c/video.js"></script>
+</head>
+<body>
+    <video id="小森林.夏秋篇.BD1280高清日语中字.mp4" class="video-js vjs-default-skin" width="640" height="480"
+        data-setup='{"controls" : true, "autoplay" : true, "preload" : "auto"}'>
+        <source src="../../../../../../media/ox/software/迅雷下载/小森林.夏秋篇.BD1280高清日语中字.mp4" type="video/mp4">
+    </video>
+</body>
